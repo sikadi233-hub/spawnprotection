@@ -1,0 +1,19 @@
+# 保护区域列表，可添加多个，每个区域由对角坐标定义
+regions:
+  spawn:
+    world: world
+    min-x: -100
+    min-y: -64
+    min-z: -100
+    max-x: 100
+    max-y: 320
+    max-z: 100
+  # 示例：另一个区域
+  # market:
+  #   world: world
+  #   min-x: 200
+  #   min-y: 64
+  #   min-z: 200
+  #   max-x: 300
+  #   max-y: 120
+  #   max-z: 300

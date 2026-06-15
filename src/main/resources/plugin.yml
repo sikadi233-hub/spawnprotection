@@ -1,0 +1,16 @@
+name: SpawnProtection
+version: 1.0
+main: com.example.spawnprotection.SpawnProtection
+api-version: '1.21.11'
+commands:
+  spawnprotect:
+    description: 管理主城保护区域
+    usage: /<command> [add|delete|list|reload]
+    aliases: [sp, protect]
+permissions:
+  spawnprotect.admin:
+    description: 管理保护区域
+    default: op
+  spawnprotect.bypass:
+    description: 绕过保护限制
+    default: op

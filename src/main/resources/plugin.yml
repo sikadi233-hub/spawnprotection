@@ -1,16 +1,21 @@
 name: SpawnProtection
 version: 1.0
 main: com.example.spawnprotection.SpawnProtection
-api-version: '1.21.11'
+api-version: "1.21"
+authors: [sikadi233]
+description: 主城保护插件 - 禁止破坏、放置、PVP、爆炸等
+
+permissions:
+  spawnprotection.bypass:
+    description: 绕过主城保护
+    default: op
+  spawnprotection.admin:
+    description: 管理主城保护
+    default: op
+
 commands:
   spawnprotect:
-    description: 管理主城保护区域
-    usage: /<command> [add|delete|list|reload]
-    aliases: [sp, protect]
-permissions:
-  spawnprotect.admin:
-    description: 管理保护区域
-    default: op
-  spawnprotect.bypass:
-    description: 绕过保护限制
-    default: op
+    description: 主城保护管理命令
+    usage: /spawnprotect <center|radius|world|reload|info>
+    aliases: [sp]
+    permission: spawnprotection.admin

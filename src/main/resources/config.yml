@@ -1,19 +1,23 @@
-# 保护区域列表，可添加多个，每个区域由对角坐标定义
-regions:
-  spawn:
-    world: world
-    min-x: -100
-    min-y: -64
-    min-z: -100
-    max-x: 100
-    max-y: 320
-    max-z: 100
-  # 示例：另一个区域
-  # market:
-  #   world: world
-  #   min-x: 200
-  #   min-y: 64
-  #   min-z: 200
-  #   max-x: 300
-  #   max-y: 120
-  #   max-z: 300
+spawn:
+  world: world
+  x: 0.0
+  y: 64.0
+  z: 0.0
+  radius: 100
+gamemode-change:
+  enabled: true
+  mode: survival
+menu-item:
+  enabled: true              # 是否启用菜单功能
+  material: NETHER_STAR      # 物品类型
+  name: "&6&l菜单"           # 物品名称
+  slot: 8                    # 位置（8=热键栏第9格）
+  command: cd                # 右键执行的命令
+  clear-inventory: true      # 进保护区清空背包
+
+messages:
+  no-break: "&c你不能在主城破坏方块！"
+  no-place: "&c你不能在主城放置方块！"
+  no-bucket: "&c你不能在主城使用桶！"
+  no-ignite: "&c你不能在主城点火！"
+  no-pvp: "&c你不能在主城攻击玩家！"

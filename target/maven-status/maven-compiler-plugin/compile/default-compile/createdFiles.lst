@@ -1,0 +1,4 @@
+com\example\spawnprotection\SpawnConfig.class
+com\example\spawnprotection\SpawnProtectCommand.class
+com\example\spawnprotection\SpawnProtectionListener.class
+com\example\spawnprotection\SpawnProtection.class
